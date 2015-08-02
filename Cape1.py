@@ -1,3 +1,8 @@
+'''
+Article is here -- https://pippenspips.wordpress.com/2015/07/28/playing-with-cape-ratios-i/
+The data can be pulled from the dropbox link given in the article above
+Value rankind strategies are covered in here. Cape2.py will have momentum strategies.
+'''
 #import packages
 import pandas as pd
 import pandas.io.data
@@ -8,8 +13,8 @@ import math
 from __future__ import division
 
 #import data
-price=pd.read_csv('Pricesfinal.csv',index_col='Date',parse_dates=True) #either read this from saved file in computer or from dropbox link
-cape=pd.read_csv('SevenYearCapeSame.csv',index_col='Date',parse_dates=True) #same as price
+price=pd.read_csv('Pricesfinal.csv',index_col='Date',parse_dates=True) 
+cape=pd.read_csv('SevenYearCapeSame.csv',index_col='Date',parse_dates=True) 
 
 #generate returns
 ret=(price-price.shift(1))/price.shift(1) #calculate returns
