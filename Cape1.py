@@ -8,8 +8,8 @@ import math
 from __future__ import division
 
 #import data
-price=pd.read_csv('Pricesfinal.csv',index_col='Date',parse_dates=True)
-cape=pd.read_csv('SevenYearCapeSame.csv',index_col='Date',parse_dates=True)
+price=pd.read_csv('Pricesfinal.csv',index_col='Date',parse_dates=True) #either read this from saved file in computer or from dropbox link
+cape=pd.read_csv('SevenYearCapeSame.csv',index_col='Date',parse_dates=True) #same as price
 
 #generate returns
 ret=(price-price.shift(1))/price.shift(1) #calculate returns
