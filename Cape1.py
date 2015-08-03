@@ -54,7 +54,7 @@ matrixcolumns=['SR Strat', 'cumret', 'CMGR'] #the order my function'newstats' wi
 
 #get buy and hold returns
 monthlyaveragefinalreturns=pd.DataFrame(finalreturns2.mean(1),columns=['Returns'])
-#monthlyaveragefinalreturns.to_csv('C:\Users\eqiu\Documents\Data\monthlyaveragefinalreturns.csv')
+
 
 #Strat 1.. long lowest 5 cape ratios
 def rankcaperatios(cape1,x): #returns lowest x cape countries. Input cape and x
